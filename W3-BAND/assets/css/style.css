@@ -1,6 +1,72 @@
-/* RESET CSS */
 * {
    padding: 0;
    margin: 0;
-   box-sizing: border-box; 
+   box-sizing: border-box;
+}
+
+html {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+#header {
+   background-color: #000;
+   height: 46px;
+}
+
+#nav li {
+   display: inline-block;
+   line-height: 46px;
+   position: relative;
+}
+
+#nav > li > a {
+   text-transform: uppercase;
+}
+
+#nav li a {
+   color: #fff;
+   text-decoration: none;
+   padding: 0 24px;
+   display: inline-block;
+}
+
+#nav > li:hover > a {
+   background-color: #ccc;
+   color: #000;
+}
+
+#nav #subnav {
+   display: block;
+   position: absolute;
+   background-color: #fff;
+   min-width: 160px;
+   top: 100%;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav li:hover #subnav a,
+#subnav li{
+   display: block;
+}
+
+#nav #subnav a {
+  display: none;
+  padding: 0 16px;
+  color: #000;
+}
+
+#subnav > li:hover > a {
+   background-color: #ccc;
+}
+
+#nav .nav-arrow-donw {
+   margin: 0 0 0 3px;
+   font-weight: bold;
+   font-size: 14px;
+}
+
+/* Content */
+#slider {
+   height: 1000px;
 }
