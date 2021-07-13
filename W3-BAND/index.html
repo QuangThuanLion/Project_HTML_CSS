@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reponsive.css">
+    <link rel="shortcut icon" href="https://www.last.fm/static/images/favicon.702b239b6194.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
-    <title>Band W3</title>
+    <title>The Band</title>
 </head>
 
 <body>
@@ -18,9 +20,9 @@
             <!-- Begin: nav -->
             <ul id="nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Band</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#slider">Band</a></li>
+                <li><a href="#tours">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#">More
                         <i class="nav-arrow-donw ti-angle-down"></i>
@@ -35,6 +37,11 @@
 
             <div class="header__search">
                 <i class="header__search--icon ti-search"></i>
+            </div>
+
+            <!-- Menu Icon Mobile -->
+            <div class="header__menu">
+                <i class="header__menu--icon ti-menu"></i>
             </div>
 
             <!-- End: nav -->
@@ -66,36 +73,41 @@
                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
-                <div class="content__about--member">
+                <div class="row pd-32">
                     <div class="thumbnail__member">
                         <span class="thumbnail__member--name">
-                            Name
+                            Join Henry
                         </span>
                         <img class="thumbnail__member--image" src="./assets/images/bandmember.jpg" alt="Name">
                     </div>
                     <div class="thumbnail__member">
                         <span class="thumbnail__member--name">
-                            Name
+                            Ronaldo
                         </span>
                         <img class="thumbnail__member--image" src="./assets/images/bandmember.jpg" alt="Name">
                     </div>
                     <div class="thumbnail__member">
                         <span class="thumbnail__member--name">
-                            Name
+                            Neymar
                         </span>
                         <img class="thumbnail__member--image" src="./assets/images/bandmember.jpg" alt="Name">
                     </div>
                 </div>
+                <!-- <dv class="clear"></dv> -->
             </section>
             <!-- End: about -->
 
             <!-- Begin:  show tours-->
-            <div class="content__schedule--wrapped">
+            <div id="tours" class="content__schedule--wrapped">
                 <section class="content__schedule">
+                    <!-- Heading -->
+
                     <div class="content__schedule--heading">
                         <h2 class="schedule__title">Tour Dates</h2>
                         <p class="schedule__subscription">Remember to book your tickets!</p>
                     </div>
+
+                    <!-- Destination -->
                     <div class="content__schedule--destination">
                         <ul class="content__schedule--detail">
                             <li>September
@@ -109,19 +121,83 @@
                             </li>
                         </ul>
                     </div>
+
+                    <!-- Ticket -->
+                    <div class="pd-32 row">
+                        <div class="ticket__detail">
+                            <img class="ticket__detail--image" src="./assets/images/newyork.jpg" alt="New York">
+                            <div class="ticket__detail--body">
+                                <p class="place__heading">New York</p>
+                                <p class="place__time">Fri 27 Nov 2016</p>
+                                <p class="place__description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <a href="#" class="place__btn">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <div class="ticket__detail">
+                            <img class="ticket__detail--image" src="./assets/images/paris.jpg" alt="Paris">
+                            <div class="ticket__detail--body">
+                                <p class="place__heading">Paris</p>
+                                <p class="place__time">Sat 28 Nov 2016</p>
+                                <p class="place__description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <a href="#" class="place__btn">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <div class="ticket__detail">
+                            <img class="ticket__detail--image" src="./assets/images/sanfran.jpg" alt="San Francisco">
+                            <div class="ticket__detail--body">
+                                <p class="place__heading">San Francisco</p>
+                                <p class="place__time">Sun 29 Nov 2016</p>
+                                <p class="place__description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <a href="#" class="place__btn">Buy Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
             </div>
             <!-- End: show tours -->
 
             <!-- Begin: contact -->
-            <section>
-
+            <section id="contact" class="content__contact">
+                <!-- Heading -->
+                <div class="content__contact--heading">
+                    <h2 class="contact__title">Contact</h2>
+                    <p class="contact__subscription">Fan? Drop a note!</p>
+                </div>
+                <div class="pd-32 row">
+                    <ul class="col col__half mb-col-full">
+                        <li class="contact__destination"><i class="ti-location-pin"></i> Chicago, US</li>
+                        <li class="contact__phone"><i class="ti-headphone-alt"></i> Phone: +00 151515</li>
+                        <li class="contact__email"><i class="ti-email"></i> Email: mail@mail.com</li>
+                    </ul>
+                    <div class="col col__half mb-col-full">
+                        <form>
+                            <div class="row">
+                                <div class="col col__half mb-col-full">
+                                    <input type="text" name="name" placeholder="Name" class="form__control" />
+                                </div>
+                                <div class="col col__half mb-col-full mb-mt-8">
+                                    <input type="email" name="email" placeholder="Email" class="form__control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="mt-8 col col__full">
+                                    <input type="text" name="message" placeholder="Message" class="form__control" />
+                                </div>
+                            </div>
+                            <a href="#" class="contact__btn">SEND</a>
+                        </form>
+                    </div>
+                </div>
             </section>
             <!-- End: contact -->
 
             <!-- Begin: map -->
-            <section>
-
+            <section id="map" class="content__map">
+                <img src="./assets/images/map.jpg" alt="Map" class="content__map--image">
             </section>
             <!-- End: map -->
 
@@ -129,8 +205,18 @@
         <!-- End: content -->
 
         <!-- Begin: footer -->
-        <footer>
-
+        <footer id="footer">
+            <div class="footer__body">
+                <div class="footer__icon">
+                    <a href="#"><i class="ti-facebook"></i></a>
+                    <a href="#"><i class="ti-instagram  "></i></a>
+                    <a href="#"><i class="ti-youtube"></i></a>
+                    <a href="#"><i class="ti-pinterest"></i></a>
+                    <a href="#"><i class="ti-twitter-alt"></i></a>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                </div>
+                <p class="footer__body--copyright">Powered by <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm">w3.css</a></p>
+            </div>
         </footer>
         <!-- End: footer -->
         <script src="assets/js/script.js"></script>

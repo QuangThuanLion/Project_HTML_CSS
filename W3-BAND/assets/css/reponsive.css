@@ -1,0 +1,57 @@
+/*  On PC */
+
+@media (min-width: 1024) {}
+
+
+/* On Tablet */
+
+@media (min-width: 740px) and (max-width:1023px) {}
+
+
+/* On Mobile */
+
+@media (max-width: 739px) {
+    /* header */
+    #nav li {
+        display: block
+    }
+    #header .header__search {
+        display: none;
+    }
+    /* Slider */
+    #slider .slider__information {
+        display: none;
+    }
+    /* Contact-member*/
+    #content .thumbnail__member {
+        width: 100%;
+    }
+    #content .thumbnail__member--image {
+        width: 230px;
+    }
+    /* Ticket */
+    #content .ticket__detail {
+        float: none;
+        width: 100%;
+        padding-bottom: 16px;
+    }
+    #content .place__btn {
+        display: block;
+        text-align: center;
+    }
+    /* Contact */
+    .mb-col-full {
+        width: 100%;
+    }
+    .mb-mt-8 {
+        margin-top: 8px;
+    }
+    #content .contact__btn {
+        width: 100%;
+        text-align: center;
+    }
+    /* footer */
+    footer .footer__icon {
+        font-size: 36px;
+    }
+}

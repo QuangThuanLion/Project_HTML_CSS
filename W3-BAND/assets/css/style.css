@@ -6,16 +6,60 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
     /* font-family: Segoe UI, Arial, sans-serif; */
 }
 
 
-/* Header */
+/* Common */
+
+.row {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.col__full {
+    width: 100%;
+}
+
+.col__half {
+    width: 50%;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.form__control {
+    width: 100%;
+    height: 40px;
+    border: solid 1px #ccc;
+    padding: 8px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.pd-32 {
+    padding-top: 32px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ------------------------Header -------------------*/
 
 #header {
     background-color: #000;
     height: 46px;
-    z-index: 99;
+    z-index: 1;
     position: fixed;
     width: 100%;
     top: 0;
@@ -95,6 +139,20 @@ html {
 }
 
 
+/* Menu mobile */
+
+#header .header__menu {
+    float: right;
+    padding: 0 24px;
+}
+
+#header .header__menu--icon {
+    color: #fff;
+    line-height: 46px;
+    font-weight: bold;
+}
+
+
 /* Slider */
 
 #slider {
@@ -105,6 +163,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    z-index: -1;
 }
 
 #slider .slider__information {
@@ -123,6 +182,7 @@ html {
 #slider .slider__destination {
     text-align: center;
     font-weight: 400;
+    font-size: 24px;
 }
 
 #slider .slider__description {
@@ -135,11 +195,12 @@ html {
 /* Content */
 
 
-/* Content: About */
+/* ------------------------About -------------------*/
 
 #content .content__about {
-    padding: 64px 16px;
+    padding: 64px 16px 112px;
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -168,11 +229,6 @@ html {
     line-height: 1.5;
 }
 
-#content .content__about--member {
-    padding: 32px 0;
-    height: 286px;
-}
-
 #content .thumbnail__member {
     text-align: center;
     width: 33.3333%;
@@ -191,7 +247,7 @@ html {
 }
 
 
-/* Schedule */
+/* ------------------------Schedule -------------------*/
 
 #content .content__schedule--wrapped {
     background-color: #000;
@@ -200,10 +256,14 @@ html {
 #content .content__schedule {
     margin-left: auto;
     margin-right: auto;
-    width: 768px;
-    padding: 64px 16px;
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px 112px;
     font-size: 15px;
 }
+
+
+/* Heading */
 
 #content .content__schedule--heading {
     text-align: center;
@@ -220,9 +280,13 @@ html {
 #content .schedule__subscription {
     opacity: 0.6;
     font-style: italic;
-    margin: 15px 0;
+    margin-top: 15px;
+    margin-bottom: 33px;
     font-size: 15px;
 }
+
+
+/* Destination */
 
 #content .content__schedule--destination {
     background-color: #fff;
@@ -242,6 +306,177 @@ html {
     padding: 2px 8px;
 }
 
-#content li .schedule--detail--page {}
+#content .content__schedule--detail .schedule--detail--page {
+    background-color: #000;
+    border-radius: 50%;
+    float: right;
+    width: 24px;
+    height: 22px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: -2px;
+    margin-right: 16px;
+    margin-left: 0;
+}
 
-#content .content__schedule--detail {}
+
+/* Tickets */
+
+#content .ticket__detail {
+    float: left;
+    width: 33.3333%;
+    padding: 0px 8px;
+}
+
+#content .ticket__detail--image {
+    width: 100%;
+    display: block;
+}
+
+#content .ticket__detail--body {
+    background-color: #fff;
+    padding: 16px;
+}
+
+#content .place__heading {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#content .place__time {
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+#content .place__description {
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+#content .place__btn {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 16px;
+    display: inline-block;
+}
+
+#content .place__btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+
+/* ------------------------Contact -------------------*/
+
+#content .content__contact {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px 112px;
+}
+
+#content .content__contact--heading {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+
+/* heading */
+
+#content .contact__title {
+    margin: 10px 0px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+#content .contact__subscription {
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px 0px;
+    font-size: 15px;
+}
+
+#content .contact__body--information {
+    margin: 32px 0;
+    display: inline-block;
+    width: 50%;
+}
+
+#content .row li {
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+
+#content .content__contact i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+#content .contact__body--form {
+    display: inline-block;
+}
+
+#content .content__contact input {
+    font-size: 15px;
+}
+
+#content .contact__destination,
+#content .contact__phone,
+#content .contact__email {
+    font-size: 18px;
+}
+
+#content .contact__btn {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 11px 14px;
+    float: right;
+    margin-top: 16px;
+}
+
+#content .contact__btn:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+
+/* ----------------------Map---------------------- */
+
+#content .content__map--image {
+    width: 100%;
+    display: block;
+}
+
+
+/* ----------------------Footer---------------------- */
+
+footer .footer__body {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+footer .footer__icon {
+    font-size: 26px;
+}
+
+footer .footer__icon a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+footer .footer__icon a:hover {
+    opacity: 0.6;
+}
+
+.footer__body--copyright {
+    margin: 15px 0;
+    font-size: 15px;
+}
