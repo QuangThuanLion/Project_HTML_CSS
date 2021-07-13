@@ -144,6 +144,7 @@ html {
 #header .header__menu {
     float: right;
     padding: 0 24px;
+    display: none;
 }
 
 #header .header__menu--icon {

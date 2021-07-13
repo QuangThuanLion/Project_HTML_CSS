@@ -18,6 +18,9 @@
     #header .header__search {
         display: none;
     }
+    #header .header__menu {
+        display: block;
+    }
     /* Slider */
     #slider .slider__information {
         display: none;
