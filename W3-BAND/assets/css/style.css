@@ -59,11 +59,12 @@ html {
 #header {
     background-color: #000;
     height: 46px;
-    z-index: 1;
+    z-index: 999;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    right: 0;
 }
 
 #header #nav {
@@ -93,7 +94,7 @@ html {
 }
 
 #nav #subnav {
-    display: block;
+    display: none;
     position: absolute;
     background-color: #fff;
     min-width: 160px;
@@ -153,18 +154,25 @@ html {
     font-weight: bold;
 }
 
+#header .header__menu:hover {
+    background-color: #ccc;
+}
+
+#header .header__menu:hover .header__menu--icon {
+    color: #000;
+}
+
 
 /* Slider */
 
 #slider {
     margin-top: 46px;
     padding-top: 50%;
-    background-image: url("../images/chicago.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    z-index: -1;
+    transition: 2s all;
 }
 
 #slider .slider__information {
@@ -190,6 +198,7 @@ html {
     font-size: 15px;
     margin-top: 20px;
     font-weight: bold;
+    text-shadow: 0 0 10px #000;
 }
 
 
