@@ -1,7 +1,7 @@
 // Slider
 const url = 'http://127.0.0.1:5500/assets';
 var slideIndex = 0;
-showImage();
+//showImage();
 
 function showImage() {
     var slider = document.getElementById("slider");
