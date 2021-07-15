@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+
+#header {
+    background-image: url("../images/parallax.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    height: 100vh;
+    position: relative;
+}
+
+#header .header__nav {
+    height: 43px;
+    width: 100%;
+}
+
+#header .header__nav--left {
+    display: inline-block;
+}
+
+#header .header__nav--left li {
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 43px;
+}
+
+#header .header__nav--left li:hover a {
+    background-color: #ccc;
+    color: #000;
+}
+
+#header .header__nav--left i[class*="ti-"] {
+    display: inline-block;
+    width: 18px;
+}
+
+#header .header__nav--left a {
+    text-decoration: none;
+    color: #777777;
+    display: inline-block;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+#header .header__nav--search {
+    float: right;
+}
+
+#header .header__nav--search:hover a {
+    background-color: #f44336;
+    color: #fff;
+}
+
+#header .header__nav--search a {
+    display: inline-block;
+    line-height: 43px;
+    padding: 0px 16px;
+    text-decoration: none;
+    color: #777777;
+}
+
+#header .header__nav--search .ti-search {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#header .logo__website {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    background-color: #000;
+    padding: 12px 24px;
+}
+
+#header .logo__website--content {
+    font-size: 24px;
+    letter-spacing: 10px;
+    color: #fff;
+}
+
+
+/* check scroll */
+
+#header .sticky {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+#header .header__nav .sticky__element {
+    color: #000;
+}
+
+
+/* Content */
+
+#content {
+    height: 1000px;
+    background-color: seagreen;
+}

@@ -184,15 +184,12 @@ html {
     0% {
         background-image: url("../images/chicago.jpg");
     }
-
     50% {
         background-image: url("../images/la.jpg");
     }
-
     75% {
         background-image: url("../images/ny.jpg");
     }
-
     100% {
         background-image: url("../images/chicago.jpg");
     }
@@ -284,6 +281,7 @@ html {
     transform: rotate(360deg);
 }
 
+
 /* ------------------------Schedule -------------------*/
 
 #content .content__schedule--wrapped {
@@ -355,6 +353,7 @@ html {
     margin-right: 16px;
     margin-left: 0;
 }
+
 
 /* Tickets */
 
