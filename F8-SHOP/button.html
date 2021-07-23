@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body>div {
+        margin: auto;
+    }
+
+    /* Button */
+    .btn {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        padding: 16px 32px;
+        border-radius: 50px;
+        min-width: 120px;
+        text-decoration: none;
+        outline: none;
+        display: inline-block;
+        cursor: pointer;
+        transition: opacity 0.2s ease-in;
+    }
+
+    .btn:hover{
+        opacity: 0.8;
+    }
+    .btn + .btn{
+        margin-left: 30px;
+    }
+
+    .btn--success {
+        background-color: #71be34;;
+    }
+
+    .btn--warning {
+        background-color: #ffb702;;
+    }
+
+    .btn--danger {
+        background-color: #ff623d;
+    }
+    .btn--size-sm{
+        padding: 8px 20px;
+    }
+    .btn--size-lg{
+        padding: 20px 40px;
+    }
+    .btn--disabled{
+        opacity: 0.5;
+        pointer-events: none;
+    }
+</style>
+
+<body>
+    <div>
+        <button class="btn btn--success btn--size-sm">GO TO NEXT APPROVAL</button>
+        <button class="btn btn--warning btn--size-sm">OK</button>
+        <button class="btn btn--danger btn--size-sm">TRY AGAIN</button>
+    </div>
+    <div>
+        <button class="btn btn--success btn--size-md btn--disabled">GO TO NEXT APPROVAL</button>
+        <button class="btn btn--warning btn--size-md btn--disabled">OK</button>
+        <button class="btn btn--danger btn--size-md btn--disabled">TRY AGAIN</button>
+    </div>
+    <div>
+        <button class="btn btn--success btn--size-lg">GO TO NEXT APPROVAL</button>
+        <button class="btn btn--warning btn--size-lg">OK</button>
+        <button class="btn btn--danger btn--size-lg">TRY AGAIN</button>
+    </div>
+</body>
+
+</html>
