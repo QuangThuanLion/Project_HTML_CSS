@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/reponsive.css">
     <title>Travel</title>
 </head>
 
@@ -15,17 +16,24 @@
     <header id="header">
         <nav id="header__nav" class="header__nav">
             <ul class="header__nav--left">
-                <li><a href="#">Home</a></li>
-                <li><a href="#"><i class="ti-user"></i>About</a></li>
-                <li><a href="#"><i class="ti-layout-grid3-alt"></i>Fortfolio</a></li>
-                <li><a href="#"><i class="ti-email"></i>Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <div id="header__nav__wrapper" class="header__nav__wrapper">
+                    <li><a href="#about"><i class="ti-user"></i>About</a></li>
+                    <li><a href="#portfolio"><i class="ti-layout-grid3-alt"></i>Portfolio</a></li>
+                    <li><a href="#contact"><i class="ti-email"></i>Contact</a></li>
+                    <li><a href="#">Search</a></li>
+                </div>
             </ul>
             <div class="header__nav--search">
                 <a href="#"><i class="ti-search"></i></a>
             </div>
+            <div id="menu__mobile" class="header__nav--menu">
+                <a href="#"><i class="ti-menu"></i></a>
+            </div>
         </nav>
         <div class="logo__website">
             <span class="logo__website--content">MY WEBSITE LOGO</span>
+            <span class="logo__website--mobile logo__website--content">MY LOGO</span>
         </div>
     </header>
     <!-- End: Header -->
@@ -34,7 +42,7 @@
     <div id="content">
 
         <!-- About me -->
-        <div class="content__wrapper content__about-me">
+        <div id="about" class="content__wrapper content__about-me">
             <div class="content__heading">
                 <h3>About me</h3>
                 <p>I love photography</p>
@@ -44,7 +52,7 @@
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.</article>
             <div class="row">
-                <div class="about__me--left col">
+                <div class="about__me--left col col__6 col__full__mobile">
                     <div class="about__me--name row">
                         <span><i class="ti-user"></i> My Name</span>
                     </div>
@@ -52,7 +60,7 @@
                         <img src="./assets/images/avatar_hat.jpg" alt="User">
                     </div>
                 </div>
-                <div class="about__me--right col">
+                <div class="about__me--right col col__6">
                     <p>
                         Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                         irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
@@ -115,7 +123,7 @@
         </div>
 
         <!-- Job -->
-        <div class="content__wrapper content__job">
+        <div id="portfolio" class="content__wrapper content__job">
             <div class="content__heading">
                 <h3>My Work</h3>
                 <p>Here are some of my latest lorem work ipsum tipsum.</p>
@@ -123,31 +131,31 @@
             </div>
             <div class="content__job--list">
                 <div class="content__job--row row">
-                    <div class="col__four">
+                    <div class="col col__four col__full__mobile">
                         <img src="./assets/images/p1.jpg" alt="natural">
                     </div>
-                    <div class="col__four">
+                    <div class="col col__four col__full__mobile">
                         <img src="./assets/images/p2.jpg" alt="bean">
                     </div>
-                    <div class="col__four">
+                    <div class="col col__four col__full__mobile">
                         <img src="./assets/images/p3.jpg" alt="bear">
                     </div>
-                    <div class="col__four">
+                    <div class="col col__four col__full__mobile">
                         <img src="./assets/images/p4.jpg" alt="river">
                     </div>
                 </div>
 
                 <div class="content__job--row row">
-                    <div class="col__four">
+                    <div class="col col__four col__full__mobile">
                         <img src="./assets/images/p5.jpg" alt="mountain">
                     </div>
-                    <div class="col__four">
+                    <div class="col col__four col__full__mobile">
                         <img src="./assets/images/p6.jpg" alt="outlet">
                     </div>
-                    <div class="col__four">
+                    <div class="col col__four col__full__mobile">
                         <img src="./assets/images/p7.jpg" alt="train">
                     </div>
-                    <div class="col__four">
+                    <div class="col col__four col__full__mobile">
                         <img src="./assets/images/p8.jpg" alt="mist">
                     </div>
                 </div>
@@ -162,10 +170,50 @@
         </div>
 
         <!-- Contact -->
-        <div class="content__wrapper content__contact">
+        <div id="contact" class="content__wrapper content__contact">
             <div class="content__heading">
                 <h3>Where I Work</h3>
                 <p>I'd love your feedback!</p>
+            </div>
+            <div class="content__contact__body row">
+                <div class="contact__body_col col col__third col__full__mobile">
+                    <img class="content__contact--map" src="./assets/images/map.jpg" alt="map__image">
+                </div>
+                <div class="contact__body_col col col__nine col__full__mobile">
+                    <div class="body__col__right--infor row">
+                        <div class="row">
+                            <span><i class="ti-location-pin"></i>Chicago, US</span>
+                        </div>
+                        <div class="row">
+                            <span><i class="ti-headphone-alt"></i>Phone: +00 151515</span>
+                        </div>
+                        <div class="row">
+                            <span><i class="ti-email"></i>Email: mail@mail.com</span>
+                        </div>
+                    </div>
+                    <div class="body__col__right--title row">
+                        <span>Swing by for a cup of <i class="ti-cup"></i>, or leave me a note:</span>
+                    </div>
+                    <div class="body__col__right--form row">
+                        <form>
+                            <div class="form__name_email row">
+                                <div class="col col__6 col__full__mobile">
+                                    <input type="text" placeholder="Name" class="form__control" required>
+                                </div>
+                                <div class="col col__6 col__full__mobile mb-mt-8">
+                                    <input type="email" placeholder="Email" class="form__control" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form__message col col__full">
+                                    <input type="text" placeholder="Message" class="form__control">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button class="content__contact__btn row__full_mb"><i class="ti-new-window"></i> Send
+                        Message</button>
+                </div>
             </div>
         </div>
 
@@ -174,8 +222,21 @@
     <!-- End: Content -->
 
     <!-- Begin: Footer -->
-    <footer>
-
+    <footer id="footer">
+        <button class="footer__btn">
+            <a href="#header">
+                <i class="ti-arrow-up">
+                </i>To the top
+            </a></button>
+        <div class="footer__icon">
+            <a href="#"><i class="ti-facebook"></i></a>
+            <a href="#"><i class="ti-instagram"></i></a>
+            <a href="#"><i class="ti-youtube"></i></a>
+            <a href="#"><i class="ti-pinterest"></i></a>
+            <a href="#"><i class="ti-twitter-alt"></i></a>
+            <a href="#"><i class="ti-linkedin"></i></a>
+        </div>
+        <p class="footer__body--copyright">Powered by <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm">w3.css</a></p>
     </footer>
     <!-- End: Footer -->
 

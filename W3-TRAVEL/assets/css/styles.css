@@ -12,18 +12,30 @@ html {
 
 /* Common */
 
-.row {
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+}
+
+.col__6 {
+    width: 50%;
+}
+
+.col__full {
     width: 100%;
 }
 
-.col {
-    width: 50%;
-    float: left;
+.col__four {
+    width: 25%;
 }
 
-.col__four {
-    float: left;
-    width: 25%;
+.col__third {
+    width: 33.3333%;
+}
+
+.col__nine {
+    width: 66.6667%;
 }
 
 .row::after {
@@ -40,7 +52,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.8;
+    /* opacity: 0.75; */
     height: 100vh;
     position: relative;
     background-attachment: fixed;
@@ -50,10 +62,14 @@ html {
     height: 43px;
     width: 100%;
     position: fixed;
-    background-color: #fff;
+    z-index: 999;
 }
 
 #header .header__nav--left {
+    display: inline-block;
+}
+
+#header .header__nav__wrapper {
     display: inline-block;
 }
 
@@ -80,10 +96,27 @@ html {
     display: inline-block;
     padding-right: 16px;
     padding-left: 16px;
+    width: 100%;
+}
+
+#header .header__nav__wrapper li:last-child {
+    display: none;
+}
+
+
+/* Begin: Logo__Menu_Search */
+
+#header .header__nav--menu {
+    float: right;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #header .header__nav--search {
     float: right;
+    display: block;
 }
 
 #header .header__nav--search:hover a {
@@ -91,6 +124,7 @@ html {
     color: #fff;
 }
 
+#header .header__nav--menu a,
 #header .header__nav--search a {
     display: inline-block;
     line-height: 43px;
@@ -99,10 +133,14 @@ html {
     color: #777777;
 }
 
+#header .header__nav--menu .ti-menu,
 #header .header__nav--search .ti-search {
     font-weight: 700;
     font-size: 15px;
 }
+
+
+/* End: Logo__Menu_Search */
 
 #header .logo__website {
     display: inline-block;
@@ -112,13 +150,21 @@ html {
     top: 50%;
     background-color: #000;
     padding: 12px 24px;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 #header .logo__website--content {
     font-size: 24px;
     letter-spacing: 10px;
     color: #fff;
+    display: block;
+}
+
+#header .logo__website--mobile {
+    font-size: 24px;
+    letter-spacing: 10px;
+    color: #fff;
+    display: none;
 }
 
 
@@ -127,7 +173,7 @@ html {
 #header .sticky {
     position: fixed;
     background-color: #fff;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     animation-name: showHeader;
     animation-timing-function: ease;
     animation-duration: 0.5s;
@@ -161,6 +207,7 @@ html {
     width: 980px;
     margin: 0 auto;
     padding: 64px 16px;
+    max-width: 100%;
 }
 
 
@@ -277,6 +324,7 @@ html {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    flex-direction: row;
 }
 
 #content .content__accomplishment--detail span {
@@ -323,7 +371,7 @@ html {
 
 #content .content__job--row img {
     width: 100%;
-    padding: 8px;
+    padding: 8px 0px;
 }
 
 #content .content__job--row {
@@ -359,16 +407,151 @@ html {
 }
 
 
-/* Conact slider */
+/* Contact slider */
 
 #content .contact__slider {
     background-image: url("../images/parallax3.jpg");
 }
 
+#content .content__contact--map {
+    width: 100%;
+}
 
-/* content__fortfolio */
+#content .content__contact__body {
+    padding: 48px 0px;
+}
+
+#content .contact__body_col {
+    padding: 0 16px;
+}
+
+#content .body__col__right--title,
+#content .content__contact__body div[class*="col__nine"] {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#content .body__col__right--infor {
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+#content .body__col__right--infor i[class*="ti-"] {
+    font-size: 24px;
+    margin-right: 16px;
+}
+
+#content .body__col__right--infor div {
+    padding: 8px 0px;
+}
+
+#content .form__name-email {
+    margin-bottom: 8px;
+}
+
+#content .form__control {
+    width: 100%;
+    padding: 8px;
+    height: 45px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+#content .form__name_email {
+    padding-bottom: 8px;
+}
+
+#content .body__col__right--form {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+#content .content__contact__btn {
+    margin: 16px 0px;
+    padding: 8px 16px;
+    height: 43px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    float: right;
+    font-size: 15px;
+}
+
+#content .content__contact__btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+    color: #000;
+}
+
+
+/* Footer */
 
 footer {
-    height: 1000px;
-    background-color: salmon;
+    padding: 64px 0px;
+    text-align: center;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+footer:hover {
+    opacity: 1;
+}
+
+footer .footer__btn {
+    height: 43px;
+    padding: 8px 15px;
+    font-size: 15px;
+    background-color: #fff;
+    border: none;
+}
+
+footer .footer__btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+footer .footer__btn i[class*="ti-"] {
+    margin-right: 16px;
+    color: #000;
+    font-weight: bold;
+}
+
+footer .footer__icon {
+    margin: 16px 0px;
+    height: 43px;
+    line-height: 43px;
+}
+
+footer .footer__icon i[class*="ti-"]:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+footer .footer__icon i[class*="ti-"] {
+    font-size: 26px;
+}
+
+footer .footer__icon a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer__body--copyright {
+    margin: 15px 0px;
+    color: #fff;
+    font-size: 15px;
+}
+
+footer .footer__body--copyright a {
+    color: inherit;
+}
+
+footer .footer__body--copyright a:hover {
+    color: #4CAF50;
+}
+
+footer .footer__btn a {
+    text-decoration: none;
+    color: initial;
 }

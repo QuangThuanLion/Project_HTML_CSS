@@ -1,0 +1,86 @@
+/* FOR PC */
+
+@media (min-width: 64em) {}
+
+
+/* FOR TABLET */
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    /* Header */
+    #header {
+        height: initial;
+        min-height: 400px;
+        background-attachment: scroll;
+    }
+    #header .logo__website {
+        width: 425px;
+    }
+}
+
+
+/* FOR MOBILE */
+
+@media (max-width: 46.1875em) {
+    /* Common */
+    .col__full__mobile {
+        width: 100%;
+        float: unset;
+    }
+    .mb-mt-8 {
+        margin-top: 8px;
+    }
+    .row__full_mb {
+        width: 100%;
+    }
+    /* Header */
+    #header {
+        height: initial;
+        min-height: 400px;
+        background-attachment: scroll;
+    }
+    #header .logo__website {
+        width: 230px;
+    }
+    /* Menu__mobile */
+    #header .header__nav--left i[class*="ti-"],
+    #header .logo__website--content,
+    #header .header__nav--search {
+        display: none;
+    }
+    #header .logo__website--mobile,
+    #header .header__nav--left li,
+    #header .header__nav--menu,
+    #header .header__nav--left,
+    #header .header__nav__wrapper li:last-child {
+        display: block;
+    }
+    #header .header__nav__wrapper {
+        background-color: #fff;
+        display: none;
+    }
+    /* About me */
+    #content .about__me--right {
+        display: none;
+    }
+    /* Accomplishment */
+    #content .content__accomplishment {
+        flex-direction: column;
+        height: auto;
+    }
+    .content__accomplishment--detail {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    /* Job */
+    #content .content__job--row img {
+        padding: unset;
+        display: block;
+    }
+    #content .content__job--row {
+        margin: 16px 0px;
+    }
+    /* Footer */
+    footer .footer__icon i[class*="ti-"] {
+        font-size: 36px;
+    }
+}
