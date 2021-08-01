@@ -13,15 +13,15 @@
             background-color: red;
             width: 50%;
         }
-
+        
         #box_div_children {
             font-size: 20px;
         }
-
+        
         #test_div {
             font-size: 1em;
         }
-
+        
         #box_sizing {
             margin-top: 10px;
             background-color: blue;
@@ -33,7 +33,7 @@
             border-style: solid;
             box-sizing: border-box;
         }
-
+        
         .background_clip {
             margin-top: 10px;
             width: 50%;
@@ -49,7 +49,7 @@
             justify-content: center;
             align-items: center;
         }
-
+        
         .linear_gradient {
             margin-top: 10px;
             width: 100%;
@@ -57,21 +57,18 @@
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
-            background-image: linear-gradient(20deg, rgba(255, 200, 220, 0.5), rgba(150, 200, 150, 0.5)),
-                url(https://capturelandscapes.com/wp-content/uploads/2017/03/DSC2441-Panorama.jpeg);
+            background-image: linear-gradient(20deg, rgba(255, 200, 220, 0.5), rgba(150, 200, 150, 0.5)), url(https://capturelandscapes.com/wp-content/uploads/2017/03/DSC2441-Panorama.jpeg);
         }
-
+        
         .image {
             margin-top: 10px;
             width: 50%;
             height: 500px;
-            background-image:
-                url(https://img.docbao.vn/images/fullsize/2018/10/03/THe-Gioi/thu-trang-13.jpg),
-                url(https://i.pinimg.com/originals/c8/51/69/c851693a79858bc46a41e96e64a07c91.png);
+            background-image: url(https://img.docbao.vn/images/fullsize/2018/10/03/THe-Gioi/thu-trang-13.jpg), url(https://i.pinimg.com/originals/c8/51/69/c851693a79858bc46a41e96e64a07c91.png);
             background-size: 100%;
             background-repeat: no-repeat;
         }
-
+        
         .background_orgin {
             margin-top: 10px;
             width: 50%;
@@ -86,7 +83,7 @@
             background-origin: content-box;
             background-image: url(https://1.bp.blogspot.com/-7ATzJ-Kl25I/XQO4skCtCfI/AAAAAAAAAfQ/K4ZzZxSnZi8doQd5fdV_d1cVvjAxqxmQQCLcBGAs/s400/hotgirl-vn-cam-1.jpg);
         }
-
+        
         .background_position {
             margin-top: 10px;
             width: 50%;
@@ -96,22 +93,21 @@
             background-position: top 20px right 50px;
             background-image: url(http://static1.bestie.vn/Mlog/ImageContent/201808/phan-ung-cua-bao-nuoc-ngoai-truoc-cac-hot-girl-viet-nam-a0b28b.jpg);
         }
-
+        
         .background_shorthand {
             margin-top: 10px;
             width: 50%;
             height: 500px;
-            background:
-                url(https://genk.mediacdn.vn/2019/11/27/photo-1-15747884896171016497022.jpg) no-repeat center / contain
+            background: url(https://genk.mediacdn.vn/2019/11/27/photo-1-15747884896171016497022.jpg) no-repeat center / contain
         }
-
+        
         .pseudo_attribute {
             margin-top: 10px;
             width: 50%;
             height: 500px;
             background-color: lavenderblush;
         }
-
+        
         .pseudo_attribute::before {
             content: "Đây là element giả before";
             display: block;
@@ -120,7 +116,7 @@
             background-color: lawngreen;
             color: red;
         }
-
+        
         .pseudo_attribute::after {
             content: "Đây là element giả after";
             display: block;
@@ -128,57 +124,57 @@
             height: 50%;
             background-color: salmon;
         }
-
-        ::marker {
+        
+         ::marker {
             color: salmon;
             font-weight: bold;
         }
-
+        
         .first_pseudo::first-line {
             color: seagreen;
             font-weight: bold;
             font-size: 20px;
         }
-
+        
         .first_pseudo::first-letter {
             color: springgreen;
             font-size: 30px;
         }
-
+        
         .h1::first-line {
             color: springgreen;
         }
-
+        
         .h1_selection::selection {
             background-color: turquoise;
             color: #FFFF;
         }
-
+        
         .marker_pseudo>li::selection {
             background-color: skyblue;
         }
-
+        
         .marker_pseudo::first-line {
             color: skyblue;
             font-size: 20px;
         }
-
+        
         .marker_pseudo:hover::first-line {
             color: red;
         }
-
+        
         .position_relative {
             position: relative;
             top: 10px;
         }
-
+        
         .box_relative {
             width: 50%;
             height: 200px;
             background-color: violet;
             position: relative;
         }
-
+        
         .box_relative_first {
             width: 50%;
             height: 50%;
@@ -187,7 +183,7 @@
             left: 25%;
             top: 25%;
         }
-
+        
         .box_absolute {
             width: 50%;
             height: 50%;
@@ -196,7 +192,7 @@
             top: 25%;
             left: 25%;
         }
-
+        
         .box_absolute_children {
             width: 50%;
             height: 50%;
@@ -205,7 +201,7 @@
             top: 25%;
             left: 25%;
         }
-
+        
         .header {
             height: 50px;
             top: 0px;
@@ -214,7 +210,7 @@
             background-color: violet;
             position: fixed;
         }
-
+        
         footer {
             width: 100%;
             height: 50px;
@@ -222,72 +218,84 @@
             position: fixed;
             bottom: 0px;
         }
-
         /* flex grow */
+        
         .wrap-layout {
             margin: 10px auto;
             background-color: #ccc;
             display: flex;
             padding: 20px 0;
         }
+        
         .wrap-layout_item {
             height: 90px;
             width: 90px;
             text-align: center;
             line-height: 90px;
         }
-        .wrap-layout_item_1{
+        
+        .wrap-layout_item_1 {
             flex-grow: 1;
             background-color: yellow;
         }
-        .wrap-layout_item_2{
+        
+        .wrap-layout_item_2 {
             flex-grow: 2;
             background-color: turquoise;
         }
-        .wrap-layout_item_3{
+        
+        .wrap-layout_item_3 {
             background-color: tomato;
         }
-        .wrap-layout_item_4{
+        
+        .wrap-layout_item_4 {
             background-color: violet;
         }
-        .wrap-layout_item_5{
+        
+        .wrap-layout_item_5 {
             background-color: blanchedalmond;
         }
-
         /* flex shrink */
-        .wrap-layout_shrink{
+        
+        .wrap-layout_shrink {
             margin: 10px auto;
             background-color: #ccc;
             display: flex;
             padding: 20px 0;
         }
-        .wrap-layout_item_shrink{
+        
+        .wrap-layout_item_shrink {
             height: 90px;
             width: 200px;
             text-align: center;
             line-height: 90px;
             margin-left: 10px;
         }
-        .wrap-layout_item_shrink_1{
+        
+        .wrap-layout_item_shrink_1 {
             flex-shrink: 3;
             background-color: blanchedalmond;
         }
-        .wrap-layout_item_shrink_2{
+        
+        .wrap-layout_item_shrink_2 {
             flex-shrink: 3;
             background-color: blue;
         }
-        .wrap-layout_item_shrink_3{
+        
+        .wrap-layout_item_shrink_3 {
             background-color: burlywood;
         }
-        .wrap-layout_item_shrink_4{
+        
+        .wrap-layout_item_shrink_4 {
             background-color: cornflowerblue;
         }
-        .wrap-layout_item_shrink_5{
+        
+        .wrap-layout_item_shrink_5 {
             background-color: darkgreen;
         }
-
         /* Layout flex self */
-        .wrap_flex_self{
+        
+        .wrap_flex_self {
             height: 300px;
             margin-top: 10px;
             background-color: #ccc;
@@ -296,29 +304,36 @@
             align-items: center;
             justify-content: space-around;
         }
-        .wrap_flex_self_item{
+        
+        .wrap_flex_self_item {
             text-align: center;
             line-height: 90px;
             width: 200px;
             height: 90px;
         }
+        
         .wrap_flex_self_item:nth-child(1) {
             background-color: yellow;
         }
-        .wrap_flex_self_item:nth-child(2){
+        
+        .wrap_flex_self_item:nth-child(2) {
             background-color: yellowgreen;
             align-self: flex-start;
         }
-        .wrap_flex_self_item:nth-child(3){
+        
+        .wrap_flex_self_item:nth-child(3) {
             background-color: tomato;
         }
-        .wrap_flex_self_item:nth-child(4){
+        
+        .wrap_flex_self_item:nth-child(4) {
             align-self: flex-end;
             background-color: darkturquoise;
         }
-        .wrap_flex_self_item:nth-child(5){
+        
+        .wrap_flex_self_item:nth-child(5) {
             background-color: violet;
         }
+        
         .animation {
             margin-top: 32px;
             width: 100px;
@@ -327,6 +342,7 @@
             animation-name: example;
             animation-duration: 4s;
         }
+        
         @keyframes example {
             from {
                 background-color: red;
@@ -335,6 +351,7 @@
                 background-color: yellow;
             }
         }
+        
         .animation1 {
             margin-top: 32px;
             width: 100px;
@@ -343,7 +360,7 @@
             animation-name: example1;
             animation-duration: 4s;
         }
-
+        
         @keyframes example1 {
             0% {
                 background-color: salmon;
@@ -358,6 +375,7 @@
                 background-color: turquoise;
             }
         }
+        
         .animation2 {
             margin-top: 32px;
             width: 100px;
@@ -368,33 +386,35 @@
             animation-duration: 5s;
             animation-delay: 2;
         }
+        
         @keyframes example2 {
-           0% {
-               background-color: red;
-               left: 0px;
-               top: 0px;
-           }
-           25% {
-               background-color: greenyellow;
-               left: 200px;
-               top: 0px;
-           }
-           50% {
-               background-color: hotpink;
-               left: 200px;
-               top: 200px;
-           }
-           75% {
-               background-color: blue;
-               left: 0px;
-               top: 200px;
-           }
-           100%{
-               background-color: burlywood;
-               left: 0px;
-               top: 0px;
-           }
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: greenyellow;
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                background-color: hotpink;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-color: blue;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                background-color: burlywood;
+                left: 0px;
+                top: 0px;
+            }
         }
+        
         .animation3 {
             margin-top: 32px;
             width: 100px;
@@ -406,34 +426,36 @@
             animation-duration: 4s;
             animation-iteration-count: 4;
         }
+        
         @keyframes example3 {
-            0%{
-                background-color:salmon;
+            0% {
+                background-color: salmon;
                 left: 0px;
                 top: 0px;
             }
-            25%{
+            25% {
                 background-color: seagreen;
                 left: 200px;
                 top: 0px;
             }
-            50%{
+            50% {
                 background-color: violet;
                 left: 200px;
                 top: 200px;
             }
-            75%{
+            75% {
                 background-color: yellow;
                 left: 0px;
                 top: 200px;
             }
-            100%{
+            100% {
                 background-color: thistle;
                 top: 0px;
                 left: 0px;
             }
         }
-        .animation4{
+        
+        .animation4 {
             margin-top: 32px;
             background-color: red;
             width: 100px;
@@ -443,33 +465,35 @@
             animation-duration: 4s;
             animation-iteration-count: infinite;
         }
+        
         @keyframes example4 {
-            0%{
-                background-color:salmon;
+            0% {
+                background-color: salmon;
                 left: 0px;
                 top: 0px;
             }
-            25%{
+            25% {
                 background-color: seagreen;
                 left: 200px;
                 top: 0px;
             }
-            50%{
+            50% {
                 background-color: violet;
                 left: 200px;
                 top: 200px;
             }
-            75%{
+            75% {
                 background-color: yellow;
                 left: 0px;
                 top: 200px;
             }
-            100%{
+            100% {
                 background-color: thistle;
                 top: 0px;
                 left: 0px;
             }
         }
+        
         .animation5 {
             margin-top: 32px;
             background-color: red;
@@ -483,32 +507,512 @@
             /* animation-direction: alternate; */
             /* animation-direction: reverse; */
         }
+        
         @keyframes example5 {
-            0%{
-                background-color:salmon;
+            0% {
+                background-color: salmon;
                 left: 0px;
                 top: 0px;
             }
-            25%{
+            25% {
                 background-color: seagreen;
                 left: 200px;
                 top: 0px;
             }
-            50%{
+            50% {
                 background-color: violet;
                 left: 200px;
                 top: 200px;
             }
-            75%{
+            75% {
                 background-color: yellow;
                 left: 0px;
                 top: 200px;
             }
-            100%{
+            100% {
                 background-color: thistle;
                 top: 0px;
                 left: 0px;
             }
+        }
+        
+        .section {
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+        
+        .selection__div__plus__p div+p {
+            color: red;
+        }
+        
+        .selection_div_ul p~ul {
+            background: red;
+        }
+        
+        p.selection__p~nav {
+            background: green;
+        }
+        
+        .selection__targert button[type="button"] {
+            background-color: greenyellow;
+            outline: none;
+            padding: 10px 12px;
+            border: 1px solid #000;
+        }
+        
+        .selection_target_1 button[type] {
+            background-color: orange;
+            outline: none;
+            border: none;
+            padding: 10px 12px;
+            border-radius: 10px;
+        }
+        
+        .selection__title a[title~="page"] {
+            color: red;
+        }
+        
+        .selection__en p[title|=nguyen] {
+            background: red;
+        }
+        
+        .selection__en p[title|=nguyen] {
+            background: yellow;
+        }
+        
+        .selection_test div[class^="nguyen"] {
+            background: blueviolet;
+        }
+        
+        .selection_test_all p[class*="first"] {
+            background: chartreuse;
+        }
+        
+        .selection__test_end_point div[class$="test"] {
+            background: cyan;
+        }
+        
+        .selection__test_all p[class*="name"] {
+            background: darkorange;
+        }
+        
+        .selection__test_all p[class~=name] {
+            background: darkseagreen;
+        }
+        /* Ví dụ về class */
+        
+        .selection__total__check {
+            background-color: #ccc;
+            padding: 12px 24px;
+        }
+        /* Ví dụ về .class1.class2 */
+        
+        .quangthuan.thuannguyen {
+            background-color: deeppink;
+            color: #fff;
+            display: inline-block;
+            padding: 10px;
+        }
+        /* Vi du ve .class1 .class2 */
+        
+        .selection__total__check .quangthuan1 {
+            --height__primary: 50px;
+            background-color: rgba(50, 120, 120, 1);
+            display: block;
+            width: 100px;
+            height: var(--height__primary);
+            text-align: center;
+            line-height: var(--height__primary);
+            color: #fff;
+        }
+        /* Vi du ve Id */
+        
+        #hehe {
+            color: #fff;
+            font-size: 40px;
+        }
+        /* Vi du ve * */
+        
+        * {
+            font-size: 16px;
+            color: #000;
+        }
+        /* Vi du ve element p */
+        
+        .selection__total__check h3 {
+            color: darkorange;
+            font-size: 50px;
+        }
+        /* Vi du ve element.class */
+        
+        p.hehe-test {
+            color: greenyellow;
+            padding: 10px 20px;
+            background-color: hotpink;
+            display: inline-block;
+        }
+        /* vi du ve element, element */
+        
+        nav,
+        article {
+            color: red;
+            background: papayawhip;
+            text-decoration: line-through;
+            display: inline-block;
+        }
+        /* Vi du ve element element */
+        
+        blockquote {
+            margin: 0;
+        }
+        
+        blockquote p {
+            color: powderblue;
+            background-color: peru;
+            display: inline-block;
+            padding: 10px 24px;
+            text-decoration: line-through;
+            user-select: none;
+        }
+        /*  vi du ve Element  > element */
+        
+        .selection__total__check ul>li {
+            list-style-type: none;
+            color: red;
+            font-size: 24px;
+        }
+        /* Vi du ve elemetn + element */
+        
+        .quangthuan1+p {
+            color: salmon;
+            background-color: seashell;
+            display: inline-block;
+            padding: 10px 12px;
+        }
+        /* vi du ve element ~ element */
+        
+        div.quangthuan__haha~p {
+            --height__and__width__root: 200px;
+            background-color: sienna;
+            display: block;
+            width: var(--height__and__width__root);
+            height: 50px;
+            color: #fff;
+            text-align: center;
+        }
+        /* Vi du ve attribute targert */
+        
+        .selection__total__check p[title] {
+            color: red;
+            background-color: snow;
+            display: block;
+            width: 200px;
+            line-height: 50px;
+        }
+        /* Vi du ve attribtue = value */
+        
+        .selection__total__check p[class="hehe"] {
+            color: greenyellow;
+        }
+        /* Vi du ve attribute ~= value */
+        
+        .selection__total__check p[class~="hehe"] {
+            color: hotpink;
+            background-color: lavender;
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            padding: 0px 10px;
+            border-radius: 10px;
+        }
+        /* Ví dụ về attribute |= value ở đây giữa khoảng cách giữa các class thì không được có khoảng trắng */
+        
+        .selection__total__check p[class|=hihi] {
+            color: maroon;
+            background-color: khaki;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        /* Ví dụ về attribute ^=value bắt đầu bằng kí tự đó nhưng cho phép có khoảng trắng */
+        
+        .selection__total__check p[class^="lala"] {
+            color: greenyellow;
+            background-color: hotpink;
+            display: inline-block;
+            padding: 20px 12px;
+            border-radius: 10px;
+        }
+        /* Ví dụ về attribute$=value class cuối cùng có giá trị như vậy*/
+        
+        .selection__total__check p[class$="kaka"] {
+            color: #000;
+            background-color: lavenderblush;
+            border-radius: 10px;
+        }
+        /* Ví dụ về attribute*=value truy cập vào tất cả không phân biệt điểm cuối hay đầu hay giữa, chỉ cần
+        có nội dung là containALl vào được*/
+        
+        .active a:visited {
+            color: #000;
+        }
+        
+        .active a:active {
+            color: lawngreen;
+        }
+        
+        .before p::before {
+            content: "before ";
+            background-color: red;
+            display: inline-block;
+            color: #fff;
+            padding: 10px 12px;
+        }
+        
+        .after p::after {
+            content: " after";
+            display: inline-block;
+            color: #fff;
+            background-color: goldenrod;
+            padding: 10px 12px;
+        }
+        
+        .checked input:checked {
+            height: 50px;
+            width: 50px;
+        }
+        
+        .default input:default {
+            box-shadow: 0 0 1px 1px red;
+        }
+        
+        .enabled input:enabled {
+            background: red;
+            color: #fff;
+        }
+        
+        .enabled input:disabled {
+            background: greenyellow;
+            cursor: not-allowed;
+        }
+        
+        .empty p:empty {
+            --width--root: 500px;
+            background-color: indianred;
+            width: var(--width--root);
+            height: calc(var(--width--root) - 400px);
+        }
+        
+        .first__child p:first-child {
+            background: paleturquoise;
+        }
+        
+        .first__child p:last-child {
+            background: pink;
+        }
+        
+        .first__letter p::first-letter {
+            font-size: 50px;
+            color: red;
+            text-decoration: line-through;
+            font-style: italic;
+        }
+        
+        .first__line p::first-line {
+            background: khaki;
+            color: red;
+            font-weight: 700;
+        }
+        
+        .first__of__type p:first-of-type {
+            background-color: red;
+        }
+        
+        .first__of__type p:last-of-type {
+            background-color: greenyellow;
+        }
+        
+        .focus input:first-of-type:focus {
+            background: yellow;
+        }
+        
+        .focus input:last-of-type {
+            width: 100px;
+            transition-timing-function: ease-in-out;
+            transition-duration: 0.5s;
+            transition-property: width;
+            border: 2px solid red;
+        }
+        
+        .focus input:last-of-type:focus {
+            width: 300px;
+            background: blueviolet;
+        }
+        
+        .in__range input:first-of-type:in-range {
+            border: 3px solid violet;
+        }
+        
+        .in__range input:last-of-type:out-of-range {
+            border: 3px solid red;
+        }
+        
+        .valid input:first-of-type:valid {
+            border: 2px solid yellow;
+        }
+        
+        .valid input:last-of-type:invalid {
+            border: 2px solid violet;
+        }
+        
+        .valid input:last-of-type:valid {
+            border-style: dashed;
+            border-color: turquoise;
+            border-width: 10px;
+        }
+        
+        .link a:link {
+            background-color: red;
+        }
+        
+        .nth__child p:nth-child(1) {
+            background-color: red;
+        }
+        
+        .nth__child p:nth-child(2) {
+            background-color: yellow;
+        }
+        
+        .nth__child p:nth-child(3) {
+            background-color: turquoise;
+        }
+        
+        .nth__child p:nth-child(4) {
+            background-color: violet;
+        }
+        
+        .nth__child p:nth-child(5) {
+            background-color: wheat;
+        }
+        
+        .nth__child__odd__even p:nth-child(odd) {
+            background: red;
+        }
+        
+        .nth__child__odd__even p:nth-child(even) {
+            background: greenyellow;
+        }
+        
+        .nth__child__3n__0 p:nth-child(3n + 1) {
+            background: hotpink;
+        }
+        
+        .nth__child__3n__0 p:nth-child(3n + 2) {
+            background: greenyellow;
+        }
+        
+        .nth__child__3n__0 p:nth-child(3n + 3) {
+            background: yellow;
+        }
+        
+        .nth__last__child p:nth-last-child(2) {
+            background-color: turquoise;
+        }
+        
+        .nth__last__child__odd_even p:nth-last-child(odd) {
+            background-color: red;
+        }
+        
+        .nth__last__child__odd_even p:nth-last-child(even) {
+            background-color: yellow;
+        }
+        
+        .nth__last__child__3n p:nth-last-child(3n + 1) {
+            background-color: turquoise;
+        }
+        
+        .nth__last__child__3n p:nth-last-child(3n + 2) {
+            background-color: rgb(236, 172, 172);
+        }
+        
+        .nth__last__child__3n p:nth-last-child(3n + 3) {
+            background-color: rgb(188, 231, 124);
+        }
+        
+        .nth__last__of__type p:nth-last-of-type(2) {
+            background-color: blue;
+        }
+        
+        .nth__last__of__type_odd_even p:nth-last-of-type(odd) {
+            background-color: coral;
+        }
+        
+        .nth__last__of__type_odd_even p:nth-last-of-type(even) {
+            background-color: cyan;
+        }
+        
+        .nth__last__of__type__3n p:nth-last-of-type(3n + 1) {
+            background-color: darkkhaki;
+        }
+        
+        .nth__last__of__type__3n p:nth-last-of-type(3n + 2) {
+            background-color: greenyellow;
+        }
+        
+        .nth__last__of__type__3n p:nth-last-of-type(3n + 3) {
+            background-color: hotpink;
+        }
+        
+        .nth__of__type p:nth-of-type(1) {
+            background-color: hotpink;
+        }
+        
+        .nth__of__type__odd__even p:nth-of-type(odd) {
+            background-color: lawngreen;
+        }
+        
+        .nth__of__type__odd__even p:nth-of-type(even) {
+            background-color: lightcoral;
+        }
+        
+        .nth__of__type__3n p:nth-of-type(3n + 1) {
+            background-color: lightcyan;
+        }
+        
+        .nth__of__type__3n p:nth-of-type(3n + 2) {
+            background-color: lightgreen;
+        }
+        
+        .nth__of__type__3n p:nth-of-type(3n + 3) {
+            background-color: orange;
+        }
+        
+        .only__of__type p:only-of-type {
+            background-color: orange;
+        }
+        
+        .only__child p:only-child {
+            background-color: palegreen;
+        }
+        
+        .border__check__top {
+            border-width: 20px 30px;
+            border-style: solid;
+            border-color: transparent transparent chocolate transparent;
+            display: inline-block;
+        }
+        
+        .border__check__cheo {
+            border-top: 20px solid green;
+            border-right: 20px solid orange;
+        }
+        
+        .border__check__span {
+            margin: auto;
+            border-top: 20px solid green;
+            border-right: 20px solid orange;
         }
     </style>
 </head>
@@ -596,7 +1100,424 @@
     <div class="animation3"></div>
     <div class="animation4"></div>
     <div class="animation5"></div>
-    </br></br></br>
+    </br>
+    </br>
+    </br>
+    <section class="section">
+        <h2>Đây là cách truy cập thẻ div + p với hiểu là thẻ p phải nằm sau thẻ div, hay nói cách khác thẻ div phải nằm trước thẻ p và nó truy xuất tới thẻ p đầu tiên nằm phía sau thẻ div CÚ PHÁP: DIV + P
+        </h2>
+        <div class="selection__div__plus__p">
+            <div>My Name is Thuan</div>
+            <p>This is the first p element</p>
+            <p>This is the second p element</p>
+        </div>
+        <h2>Thẻ ul nằm phía sau thẻ p đều bị ảnh hưởng truy cập theo dạng p ~ ul: CÚ PHÁP: P ~ UL</h2>
+        <div class="selection_div_ul">
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul>
+            <p>This is example access p ~ ul</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul>
+            <h2>Tất cả các thẻ nav nằm phía sau thẻ p có class là selection__p đều bị ảnh hưởng</h2>
+            <nav>Thuận Nguyễn demo</nav>
+            <p class="selection__p">Nguyễn Khắc Quang Thuận</p>
+            <nav>Nguyễn Thuận demo</nav>
+            <nav>Nguyễn Thuận demo</nav>
+            <nav>Nguyễn Thuận demo</nav>
+        </div>
+        <div class="selection__targert">
+            <h2>Select theo kiểu target vào đối tượng đó. CÚ PHÁP: Element[type="atribute"]</h2>
+            <button type="button">SELECT BUTTON TARGET</button>
+            <button type="reset">SELECT BUTTON TARGET</button>
+            <button type="button">SELECT BUTTON TARGET</button>
+        </div>
+        <div class="selection_target_1">
+            <h2>Select theo kiểu target vào các đối tượng có thuộc tính đó: CÚ PHÁP: Element[type] </h2>
+            <button type="submit">SELECT BUTTON TARGET</button>
+            <button type="submit">SELECT BUTTON TARGET</button>
+        </div>
+        <div class="selection__title">
+            <h2>Truy cập vào những thẻ a nào có nội dung title là pages thôi, có nghĩa nó chỉ chứa những đoạn nào có word là page cú pháp: Element[title~="content word"]
+            </h2>
+            <a href="#" title="access this page">Truy cập vào đường dẫn dưới đây</a>
+            <a href="#" title="access this pages">Truy cập vào đường dẫn dưới đây1</a>
+            <a href="#" title="access this">Truy cập vào đường dẫn dưới đây2</a>
+            <a href="#" title="access this page">Truy cập vào đường dẫn dưới đây</a>
+        </div>
+        <div class="selection__en">
+            <h2>truy cập vào tất cả những thẻ nào có chữ cái bắt đầu là Nguyen và đặc biệt là nó không được có khoảng trắng giữa các chữ, nó chỉ có thể là dấu nối hyphen -
+            </h2>
+            <h2>CÚ PHÁP: Element[a|=content]</h2>
+            <p title="nguyen-Khac-Quanghuan">Nguyen Khac Quang Thuan</p>
+            <p title="nguye-Khac-Quang-Thuan">Nguye Khac Quang Thuan</p>
+            <p title="nguyen-Khac-Quang-Thuan">Nguyen Khac Quang Thuan</p>
+            <p title="nguyenn-Khac-Quang-Thuan">Nguyenn Khac Quang Thuan</p>
+            <p title="nguyenm-Khac-Quan-Thuan">Nguyenm Khac Quang Thuan</p>
+            <p title="nguyen">Hello!</p>
+            <p title="nguyen-hgfhgfh">Hi!</p>
+            <p title="nguye">Ello!</p>
+            <p title="nguyen vdsvf">Hi!</p>
+            <p title="no">Hei!</p>
+        </div>
+        <div class="selection_test">
+            <h2>Ở đây truy cập vào những thẻ có content bắt đầu của class là nguyen nhưng nếu có khoảng trắng ở giữa thì nó vẫn có thể select tới thẻ đó được, khác với thẻ trên nếu có khoảng trắng vào thì nó không thể select tới được.
+            </h2>
+            <h2>CÚ PHÁP: Element[class^="content"]</h2>
+            <div class="nguyen khac quang thuan">The first div element.</div>
+            <div class="nguy khac quang thuan">The second div element.</div>
+            <div class="nguyen">The third div element.</div>
+            <div class="nguyen-gian-nan">The fourth div element.</div>
+            <p class="test">This is a paragraph.</p>
+            <p class="test_ex">This is a paragraph.</p>
+        </div>
+        <div class="selection_test_all">
+            <h2>Có thể truy cập vào toàn bộ nội dung của thẻ class có chứa nội dung content đó, ở Đây nội dung nó chứa không cần khoảng trắng giữa các nội dung trong chữ, ví dụ first111, và first thì nó đều chấp nhận là first nếu ta truyền content vào để
+                selection cho nó.
+            </h2>
+            <h2>CÚ PHÁP: Element[attribute*="content"]</h2>
+            <p class="first_test">first_test</p>
+            <p class="test first">test first</p>
+            <p class="test">test</p>
+            <p class="test first test">test fist test</p>
+            <div class="first">first</div>
+        </div>
+        <div class="selection__test_end_point">
+            <h2>Truy cập vào những thẻ có class với content ở cuối là test, có cú pháp truy cập vào đầu tiên thì cũng có cú pháp truy cập vào cuối cùng.
+            </h2>
+            <h2>CÚ PHÁP: Element[class$="content"]</h2>
+            <div class="first_test">The first div element.</div>
+            <div class="second">The second div element.</div>
+            <div class="test">The third div element.</div>
+            <div class="test thuan nguyen">test thuan nguyen</div>
+            <p class="test">This is some text in a paragraph.</p>
+        </div>
+        <div class="selection__test_all">
+            <h2>So sánh cú pháp của 2 cú pháp là: [title~=flower] và [title*="flower]</h2>
+            <p class="my name is thuan">my name is thuan</p>
+            <p class="my name1 is thuan">my name1 is thuan</p>
+            <p class="my name is thuan">my name is thuan</p>
+            <p class="my name2 is thuan">my name2 is thuan</p>
+            <p class="my name is thuan">my name is thuan</p>
+            <p class="my name3 is thuan">my name3 is thuan</p>
+            <p class="my name is thuan">my name is thuan</p>
+        </div>
+        <div class="selection__total__check">
+            <h2 id="hehe">Ví dụ tổng hợp về selection trong HTML VÀ CSS</h2>
+            <nav class="nav">Ta chinh la nav</nav>
+            <article class="article">Ta chinh la article</article>
+            <blockquote class="blockquote">
+                <p>Ta chinh la con blockquote</p>
+            </blockquote>
+            <h3>Ta chinh la h3</h3>
+            <div class="quangthuan thuannguyen">Quang Thuận</div>
+            <ul>
+                <li>
+                    <a href=""></a>1
+                </li>
+                <li>
+                    <a href=""></a>2
+                </li>
+                <li>
+                    <a href=""></a>3
+                </li>
+                <li>
+                    <a href=""></a>4
+                </li>
+            </ul>
+            <div class="quangthuan1">Quang Thuận</div>
+            <p>NGuyễn Khắc Quang Thuận</p>
+            <p class="kaka hehe" title="hehe">NGuyễn Khắc Quang Thuận</p>
+            <p class="hihi-fdfdsffd-fdsfds">NGuyễn Khắc Quang Thuận</p>
+            <p class="hehe">NGuyễn Khắc Quang Thuận</p>
+            <p class="hihi-fdfdsffd-fdsfds">NGuyễn Khắc Quang Thuận</p>
+            <p class="hehe haha">NGuyễn Khắc Quang Thuận</p>
+            <p class="lala fdfdsffd">NGuyễn Khắc Quang Thuận</p>
+            <div class="quangthuan__haha">quangthuan__haha</div>
+            <p class="haha hehe">NGuyễn Khắc Quang Thuận</p>
+            <p>NGuyễn Khắc Quang Thuận</p>
+            <p class="lala fdfdsffd">NGuyễn Khắc Quang Thuận</p>
+            <p class="hehe-test" title="hehe">NGuyễn Khắc Quang Thuận</p>
+            <p class="lala fdfdsffd">NGuyễn Khắc Quang Thuận</p>
+            <p class="hoho hehe">NGuyễn Khắc Quang Thuận</p>
+            <p>NGuyễn Khắc Quang Thuận</p>
+            <p class="hihi fdfds lala">NGuyễn Khắc Quang Thuận</p>
+            <p class="haha hehehehekaka" title="hehe">NGuyễn Khắc Quang Thuận</p>
+            <p class="hehe-test-abckaka">NGuyễn Khắc Quang Thuận</p>
+        </div>
+        <div class="active">
+            <h2>PESUDO LỚP GIẢ ACTIVE</h2>
+            <a href="https://www.w3schools.com">w3schools.com</a>
+            <a href="http://www.wikipedia.org">wikipedia.org</a>
+        </div>
+        <div class="before">
+            <h2>PESUDO ELEMENT BEFORE GIẢ</h2>
+            <p>Đây chính là thẻ p</p>
+            <p>Đây chính là thẻ p</p>
+        </div>
+        <div class="after">
+            <h2>PESUDO ELEMENT AFTER</h2>
+            <p>Đây chính là thẻ p</p>
+            <p>Đây chính là thẻ p</p>
+        </div>
+        <div class="checked">
+            <input type="radio" name="radio" id=""> Iphone
+            <input type="radio" name="radio" id=""> Samsung
+            <input type="checkbox" name="checked" id=""> male
+            <input type="checkbox" name="checked" id=""> Female
+        </div>
+        <div class="default">
+            <input type="radio" name="gender" value="male" checked> Male<br>
+        </div>
+        <div class="enabled">
+            Name: <input type="text" name="" id="" disabled> Password: <input type="text" name="" id=""> Phone: <input type="text" name="" id="">
+        </div>
+        <div class="empty">
+            <p></p>
+            <p>Đây không phải empty</p>
+            <p>Đây cũng không phải emtpy</p>
+            <p></p>
+        </div>
+        <div class="first__child">
+            <p>Đây là thẻ first child</p>
+            <p>Đây không là thẻ first-child</p>
+            <p>Đây không là thẻ last-child</p>
+            <div>
+                <p>Đây là thẻ first-child</p>
+                <p>Đây không là thẻ first-child</p>
+                <p>Đây là thẻ last-child</p>
+            </div>
+            <p>Đây không là thẻ first-child</p>
+            <p>Đây là thẻ last-child</p>
+        </div>
+        <div class="first__letter">
+            <p>Đây là thẻ P có thuộc tính first_letter</p>
+            <p>Đây là thẻ P có thuộc tính first_letter</p>
+            <p>Đây là thẻ P có thuộc tính first_letter</p>
+        </div>
+        <div class="first__line">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus quisquam molestiae iure maiores? Ipsum magnam, facere praesentium sunt eligendi cum. Nesciunt perferendis quo unde debitis veritatis ullam neque corrupti? Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Minus praesentium quas amet, adipisci sint tenetur unde soluta cum qui consequuntur non, nulla magni. Optio natus, odit laudantium ullam atque illo. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Accusantium maxime vel maiores cumque magni error consequuntur atque voluptatibus, tempora non facilis explicabo quam accusamus quia quod, doloremque voluptatum odio similique!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laboriosam</br> est vero ullam veritatis in magnam, iusto ex consequuntur earum qui. Veritatis ex labore, itaque ullam libero impedit ipsam error!
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi ipsum dolores, autem, quas eum debitis vel reprehenderit recusandae unde incidunt facere. Pariatur error sint similique saepe rerum debitis corporis aut.</p>
+        </div>
+        <div class="first__of__type">
+            <div>Haha</div>
+            <p>Đây là first of type</p>
+            <p>Đây không là first of type</p>
+            <p>Đây không first of type</p>
+            <div>
+                <p>Đây là first of type</p>
+                <p>Đây không là first of type</p>
+                <p>Đây không là first of type</p>
+                <p>Đây là last-of-type</p>
+            </div>
+            <p>Đây không là last of type</p>
+            <p>Đây là last-of-type</p>
+        </div>
+        <div class="focus">
+            focus: <input type="text" value=""> focus: <input type="text" value="">
+        </div>
+        <br>
+        <div class="in__range">
+            in-range-min5-max15: <input type="number" min="5" max="15"> out-of-range: min- 5 max-10: <input type="number" min="5" max="10">
+        </div>
+        <br>
+        <div class="valid">
+            Email Valid: <input type="email" value="Email"> Email Invalid: <input type="email" value="Email">
+        </div>
+        <div class="link">
+            <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_link">Link</a>
+        </div>
+        <div class="not__selector">
+            <h1>This is a heading</h1>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            <div>This is some text in a div element.</div>
+            <a href="https://www.w3schools.com" target="_blank">Link to W3Schools!</a>
+        </div>
+        <div class="nth__child">
+            <p>nth child 1</p>
+            <p>nth child 2</p>
+            <div>
+                <p>nth child 4</p>
+                <p>nth child 5</p>
+            </div>
+            <p>nth child 3</p>
+            <div>
+                <p>nth child 4</p>
+                <p>nth child 5</p>
+            </div>
+            <p>nth child 6</p>
+            <p>nth child 7</p>
+        </div>
+        <div class="nth__child__odd__even">
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="nth__child__3n__0">
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="nth__last__child">
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The first paragraph.</p>
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="nth__last__child__odd_even">
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The first paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The first paragraph.</p>
+            <p>The first paragraph.</p>
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="nth__last__child__3n">
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The first paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The first paragraph.</p>
+            <p>The first paragraph.</p>
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="nth__last__of__type">
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="nth__last__of__type_odd_even">
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="nth__last__of__type__3n">
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <div>hahah</div>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <div>hahah</div>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <div>hahah</div>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <div>hahah</div>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="nth__of__type">
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="nth__of__type__odd__even">
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="nth__of__type__3n">
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The third paragraph.</p>
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="only__of__type">
+            <p>The third paragraph.</p>
+            <nav>Đây là thẻ nav nó không chịu ảnh hưởng trong này vì thẻ p duy nhất ở đây</nav>
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="only__child">
+            <p>The third paragraph.</p>
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="border__check__top">
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <div class="border__check__cheo">
+        </div>
+        <h2>_____________________GIẢI PHÂN CÁCH______________</h2>
+        <span class="border__check__span">
+        </span>
+    </section>
     <footer></footer>
 </body>
 

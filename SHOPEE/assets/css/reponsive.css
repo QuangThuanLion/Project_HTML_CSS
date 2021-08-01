@@ -1,0 +1,123 @@
+/* ON PC */
+
+@media (min-width:1024px) and (max-width: 1239px) {
+    .hide-on-great-than-tablet {
+        display: none;
+    }
+    .gird-wide {
+        max-width: 984px;
+        width: 100%;
+    }
+}
+
+
+/* ON Mobile and Table */
+
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .gird-wide {
+        max-width: 644px;
+        width: 100%;
+    }
+     :root {
+        --header-height: 6.8rem;
+        --header-width-search: calc(var(--header-height));
+    }
+    .header__content__cart {
+        width: 90px;
+    }
+    .header__content__cart__message {
+        position: fixed;
+        width: 100%;
+        top: var(--header-height);
+        right: 0;
+        padding: 0 calc((100% - 644px) /2);
+    }
+    .header__content__cart__message::before {
+        display: none;
+    }
+    .header__sort-mobile {
+        display: flex;
+    }
+    .nav__category__mobile {
+        display: block;
+    }
+    .header__content-main {
+        height: 46px;
+    }
+}
+
+
+/* ON Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .gird-wide {
+        max-width: 644px;
+        width: 100%;
+    }
+}
+
+
+/* ON Mobile */
+
+@media (max-width: 739px) {
+    .hide-on-moblie {
+        display: none;
+    }
+    .gird-wide {
+        max-width: 644px;
+        width: 100%;
+    }
+    .header__content-wrap-logo {
+        text-align: center;
+    }
+    .header__search-mobile {
+        display: block;
+    }
+    .header__content-main {
+        position: absolute;
+        top: var(--header-height);
+        width: 100%;
+        left: 0;
+        z-index: 1;
+        animation-name: scrollHeaderSearch;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-out;
+        will-change: opacity;
+    }
+    .header__search-btn {
+        margin-right: 10px;
+    }
+    .header__search-history {
+        box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+        width: 100vh;
+    }
+    .pagination-link {
+        min-width: 20px;
+    }
+    .product-container-content {
+        margin: 0 5px;
+    }
+    .footer__container {
+        padding: 0 15px;
+    }
+    .nav__category__mobile {
+        margin: 0 10px 4px 10px;
+    }
+}
+
+@keyframes scrollHeaderSearch {
+    from {
+        opacity: 0;
+        top: calc(var(--header-height) / 2);
+    }
+    to {
+        opacity: 1;
+        top: var(--header-height)
+    }
+}
