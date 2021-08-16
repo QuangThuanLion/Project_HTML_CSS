@@ -1,0 +1,29 @@
+.width__full_row {
+    width: 50%;
+    max-width: 50%;
+}
+
+.colum_2 {
+    width: 20%;
+}
+
+.colum_10 {
+    width: 80%;
+}
+
+.form_group_create label {
+    display: inline-block;
+}
+
+.form_group_create input {
+    flex: 1;
+}
+
+.form_group_create {
+    display: flex;
+    margin-top: 10px;
+}
+
+.hide-element {
+    display: none;
+}

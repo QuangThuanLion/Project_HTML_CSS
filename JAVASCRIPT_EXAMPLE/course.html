@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/main.css">
+    <title>Course</title>
+</head>
+
+<body>
+
+    <div>
+        <h2>Danh sách khóa học</h2>
+        <ul id="list-courses"></ul>
+    </div>
+
+    <div>
+        <div class="form_group_create width__full_row">
+            <label for="name" class="colum_2">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="form_group_create width__full_row">
+            <label for="desciption" class="colum_2">Desciption</label>
+            <textarea rows="7" style="width: 375px;" name="desciption" id="desciption" placeholder="desciption"></textarea>
+        </div class="form_group_create width__full_row">
+        <div class="form_group_create width__full_row">
+            <label for="author" class="colum_2">Author</label>
+            <input type="text" name="author" id="author">
+        </div>
+        <div class="form_group_create width__full_row">
+            <label for="publishDate" class="colum_2">PublishDate</label>
+            <input type="text" name="publishDate" id="publishDate">
+        </div>
+        <button id="create_course">Create</button>
+    </div>
+    <div class="demo">
+
+    </div>
+    <script src="assets/course.js"></script>
+</body>
+
+</html>
